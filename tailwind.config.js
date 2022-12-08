@@ -22,4 +22,14 @@ module.exports = {
   },
   variants: {},
   plugins: [],
+  purge: {
+    enabled: process.env.NODE_ENV === 'production',
+    content: [
+      'components/**/*.vue',
+      'layout/**/*.vue',
+      'pages/**/*.vue',
+      'plugins/**/*.js',
+      'nuxt.config.js'
+    ]
+  }
 };
