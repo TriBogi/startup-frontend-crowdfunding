@@ -3,39 +3,7 @@
     <section class="landing-hero pt-5">
       <div class="header__bg"></div>
       <div class="container mx-auto relative">
-        <header class="flex items-center">
-          <div style="height: 54px" class="pr-5">
-            <img src="/logo.svg" alt="logo" class="h-full" />
-          </div>
-          <ul class="flex items-center">
-            <li>
-              <a class="text-white hover:text-teal-500 text-lg px-4 py-3" href="/">Home</a>
-            </li>
-            <li>
-              <a class="text-white hover:text-teal-500 text-lg px-4 py-3" href="/projects.html">Project</a>
-            </li>
-            <li>
-              <a class="text-white hover:text-teal-500 text-lg px-4 py-3" href="/features.html">Features</a>
-            </li>
-            <li>
-              <a class="text-white hover:text-teal-500 text-lg px-4 py-3" href="/story.html">Success Stories</a>
-            </li>
-          </ul>
-          <ul class="flex ml-auto items-center mt-2">
-            <li>
-              <a href="/register.html"
-                class="inline-block bg-transparent border-white border hover:bg-white hover:bg-opacity-25 text-white font-light w-40 text-center px-6 py-1 text-lg rounded-full mr-4">
-                Sign Up
-              </a>
-            </li>
-            <li>
-              <a href="/login.html"
-                class="inline-block bg-transparent border-white border hover:bg-white hover:bg-opacity-25 text-white font-light w-40 text-center px-6 py-1 text-lg rounded-full">
-                My Account
-              </a>
-            </li>
-          </ul>
-        </header>
+        <Navbar />
         <div class="flex items-center pt-10 px-5 md:px-0">
           <div class="w-1/2">
             <h1 class="text-4xl text-white mb-5">
@@ -147,10 +115,10 @@
                 <div class="ml-auto font-semibold">Rp 100.000.000</div>
               </div>
             </div>
-            <a href="/projects.html"
+            <nuxt-link to="/projects/1"
               class="text-center mt-5 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-2 text-lg rounded-full">
               Fund Now
-            </a>
+            </nuxt-link>
           </div>
         </div>
         <div class="card-project w-1/3 mx-6 my-4 p-5 border border-gray-500 rounded-20">
@@ -176,10 +144,10 @@
                 <div>45%</div>
                 <div class="ml-auto font-semibold">Rp 80.000.000</div>
               </div>
-              <a href="/projects.html"
+              <nuxt-link to="/projects/2"
                 class="text-center mt-5 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-2 text-lg rounded-full">
                 Fund Now
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -206,10 +174,10 @@
                 <div>80%</div>
                 <div class="ml-auto font-semibold">Rp 40.000.000</div>
               </div>
-              <a href="/projects.html"
+              <nuxt-link to="/projects/3"
                 class="text-center mt-5 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-2 text-lg rounded-full">
                 Fund Now
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -238,10 +206,10 @@
                 <div>45%</div>
                 <div class="ml-auto font-semibold">Rp 55.000.000</div>
               </div>
-              <a href="/projects.html"
+              <nuxt-link to="/projects/4"
                 class="text-center mt-5 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-2 text-lg rounded-full">
                 Fund Now
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -268,10 +236,10 @@
                 <div>70%</div>
                 <div class="ml-auto font-semibold">Rp 75.000.000</div>
               </div>
-              <a href="/projects.html"
+              <nuxt-link to="/projects/5"
                 class="text-center mt-5 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-2 text-lg rounded-full">
                 Fund Now
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -298,10 +266,10 @@
                 <div>10%</div>
                 <div class="ml-auto font-semibold">Rp 35.000.000</div>
               </div>
-              <a href="/projects.html"
+              <nuxt-link href="/projects/6"
                 class="text-center mt-5 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-2 text-lg rounded-full">
                 Fund Now
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -342,65 +310,18 @@
       </div>
     </section>
     <div class="cta-clip -mt-20"></div>
-    <section class="call-to-action bg-purple-progress pt-64 pb-10">
-      <div class="container mx-auto">
-        <div class="w-full text-center">
-          <h1 class="text-5xl text-white font-semibold">
-            Easy way to funding
-            <br />
-            best idea and innovation
-          </h1>
-          <button @click="$router.push({ path: '/upload' })"
-            class="inline-block bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-4 mt-8 text-lg rounded-full">
-            Getting Start
-          </button>
-        </div>
-      </div>
-    </section>
-    <footer class="bg-purple-progress py-20 text-white text-lg">
-      <div class="container mx-auto">
-        <div class="sm:flex mb-4">
-          <div class="sm:w-1/2 sm:mt-0 mt-8 h-auto">
-            <img src="/logo-footer.svg" alt="" class="mb-3" />
-            <p class="font-light">
-              Helps people execute their <br />bright ideas
-            </p>
-          </div>
-          <div class="sm:w-1/4 h-auto">
-            <div class="mb-8 font-bold">Explore</div>
-            <ul class="font-light">
-              <li class="mb-3">Our Services</li>
-              <li class="mb-3">Equity System</li>
-              <li class="mb-3">Refund</li>
-              <li class="mb-3">Shareholder</li>
-            </ul>
-          </div>
-          <div class="sm:w-1/4 h-auto">
-            <div class="mb-8 font-bold">Investor</div>
-            <ul class="font-light">
-              <li class="mb-3">My Account</li>
-              <li class="mb-3">Top Startups</li>
-              <li class="mb-3">How-to Tutorials</li>
-              <li class="mb-3">Withdrawl</li>
-            </ul>
-          </div>
-          <div class="sm:w-1/4 h-auto">
-            <div class="mb-8 font-bold">Office</div>
-            <ul class="font-light">
-              <li class="mb-3">+021 2208 1996</li>
-              <li class="mb-3">KBP, Bandung</li>
-              <li class="mb-3">No.12 (Backer)</li>
-              <li class="mb-3">support@backer.id</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <CallToAction />
+    <Footer />
   </div>
 </template>
 
 <script>
+import CallToAction from '~/components/CallToAction.vue';
+import Footer from '~/components/Footer.vue';
+import Navbar from '~/components/Navbar.vue';
+
 export default {
-  name: 'IndexPage',
+    name: "IndexPage",
+    components: { Navbar, CallToAction, Footer }
 }
 </script>
