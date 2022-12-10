@@ -316,9 +316,9 @@
 </template>
 
 <script>
-import CallToAction from '~/components/CallToAction.vue';
-import Footer from '~/components/Footer.vue';
-import Navbar from '~/components/Navbar.vue';
+import CallToAction from '@/components/CallToAction.vue';
+import Footer from '@/components/Footer.vue';
+import Navbar from '@/components/Navbar.vue';
 
 export default {
     name: "IndexPage",
