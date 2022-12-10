@@ -4,11 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:prettier": "prettier --check .",
-
     "lintfix": "prettier --write --list-different .",
     "serve": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
     "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
